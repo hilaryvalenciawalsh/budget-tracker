@@ -23,7 +23,6 @@ mongoose.connect(mongoUri, {
   useUnifiedTopology: true
 });
 
-//routes
 app.use(apiRoutes);
 
 app.listen(PORT, () => {
