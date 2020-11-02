@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/service-worker.js").then((reg) => {
-      console.log("Service worker registered.", reg);
+      console.log("Registered.", reg);
     });
   });
 }
@@ -34,7 +34,7 @@ function createTransactionForm() {
   const validate = () => {
 
     if (nameEl.value === "" || amountEl.value === "") {
-      showError("Missing Information");
+      showError("Missing Info");
       return false;
     }
     showError("");
@@ -194,7 +194,7 @@ function populateChart() {
     data: {
       labels,
       datasets: [{
-        label: "Total Over Time",
+        label: "Total",
         fill: true,
         backgroundColor: "#6666ff",
         data
